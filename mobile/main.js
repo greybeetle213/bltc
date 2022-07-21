@@ -1,7 +1,7 @@
 SelectedBtn = "Home"
 MenuOpen = false
 function MenuButtonPress(btn){
-    if(SelectedBtn != btn){
+    if(SelectedBtn != btn && !midnight){
         document.getElementById(SelectedBtn).className = "menuBtn"
         SelectedBtn = btn
         document.getElementById(SelectedBtn).className = "selectedBtn"
