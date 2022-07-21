@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div class="menu">
+        <img src="logo.png" alt="BLTC Logo" class="menuLogo">
+        <button class="selectedBtn" id="Home" onclick="MenuButtonPress('Home')">Home</button>
+        <button class="menuBtn" id="About" onclick="MenuButtonPress('About')">About Us</button>
+        <button class="menuBtn" id="PastEvents" onclick="MenuButtonPress('PastEvents')">Past Events</button>
+        <button class="menuBtn" id="Photos" onclick="MenuButtonPress('Photos')">Gallery</button>
+        <button class="menuBtn" id="Media" onclick="MenuButtonPress('Media')">Media</button>
+        <button class="menuBtn" id="Contact" onclick="MenuButtonPress('Contact')">Contact Us</button>
+    </div>
+    <embed id="content" src="pages/Home.html">
+</body>
+</html>
