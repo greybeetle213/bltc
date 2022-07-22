@@ -1,9 +1,7 @@
 midnight = false
 function checkMidnight(){
     time = new Date()
-    console.log(time.getHours()+":"+time.getMinutes())
-    if(time.getHours() == 24 && time.getMinutes() == 0){
-        console.log("midnight")
+    if(time.getHours() == 0 && time.getMinutes() == 0){
         if(!midnight){
             document.getElementById("content").src = "pages/midnight.html"
         }
